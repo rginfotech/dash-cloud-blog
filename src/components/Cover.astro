@@ -1,0 +1,30 @@
+---
+// Generated on-brand cover art per vertical. No external images needed.
+interface Props { vertical: 'real-estate' | 'd2c-ecommerce' | 'b2b-smes' | 'ai-automation'; id?: string; }
+const { vertical, id = vertical } = Astro.props;
+const theme = {
+  'real-estate': { a: '#1a5fe0', b: '#101b45', icon: 'M20 80V38l28-20 28 20v42H58V56H38v24zM44 40h8v8h-8z', chat: ['New enquiry', 'Viewing booked'] },
+  'd2c-ecommerce': { a: '#5749bb', b: '#1a5fe0', icon: 'M24 36h48l-4 44H28zM36 36c0-14 24-14 24 0', chat: ['Order placed', 'Confirmed on WhatsApp'] },
+  'b2b-smes': { a: '#0aa864', b: '#101b45', icon: 'M16 80V44l22 12V44l22 12V32h20v48zM30 70h8M48 70h8M66 70h8', chat: ['Quote request', 'Qualified lead'] },
+  'ai-automation': { a: '#101b45', b: '#5749bb', icon: 'M32 32h32v32H32zM40 24v8M56 24v8M40 64v8M56 64v8M24 40h8M24 56h8M64 40h8M64 56h8M42 42h12v12H42z', chat: ['Call answered', 'Meeting booked'] },
+}[vertical];
+const g = `cg-${id}`;
+---
+<svg class="cover" viewBox="0 0 640 360" role="img" aria-label="" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id={g} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color={theme.a} /><stop offset="1" stop-color={theme.b} /></linearGradient>
+    <pattern id={`${g}-dots`} width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="#fff" fill-opacity=".18" /></pattern>
+  </defs>
+  <rect width="640" height="360" fill={`url(#${g})`} />
+  <rect width="640" height="360" fill={`url(#${g}-dots)`} />
+  <circle cx="560" cy="40" r="150" fill="#fff" fill-opacity=".07" />
+  <circle cx="60" cy="340" r="120" fill="#fff" fill-opacity=".07" />
+  <g transform="translate(272 92)">
+    <rect width="96" height="96" rx="24" fill="#fff" fill-opacity=".16" stroke="#fff" stroke-opacity=".5" />
+    <path d={theme.icon} fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="15" font-weight="600">
+    <g transform="translate(70 238)"><rect width="216" height="44" rx="22" fill="#fff" /><circle cx="24" cy="22" r="8" fill={theme.a} /><text x="42" y="28" fill="#0c1a2b">{theme.chat[0]}</text></g>
+    <g transform="translate(330 270)"><rect width="250" height="44" rx="22" fill="#0aa864" /><path d="M20 23l5 5 10-11" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="46" y="28" fill="#fff">{theme.chat[1]}</text></g>
+  </g>
+</svg>

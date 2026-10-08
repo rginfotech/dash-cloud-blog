@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>DashCloud Blog Admin</title>
+</head>
+<body>
+  <script>window.CMS_MANUAL_INIT = true;</script>
+  <script src="https://unpkg.com/decap-cms@3.3.3/dist/decap-cms.js"></script>
+  <script>
+    CMS.init({
+      config: {
+        load_config_file: false,
+        backend: { name: 'proxy', proxy_url: location.origin + '/blog/api/v1', branch: 'main' },
+        publish_mode: 'simple',
+        media_folder: 'public/images/posts',
+        public_folder: 'images/posts',
+        site_url: 'https://dashcloud.in/blog/',
+        collections: [
+          {
+            name: 'blog',
+            label: 'Blog posts',
+            label_singular: 'Blog post',
+            folder: 'src/content/blog',
+            extension: 'md',
+            format: 'frontmatter',
+            create: true,
+            slug: '{{slug}}',
+            summary: '{{title}} ({{vertical}})',
+            sortable_fields: ['date', 'title'],
+            fields: [
+              { label: 'Title', name: 'title', widget: 'string', hint: 'Appears as the page H1 and in Google results. Keep under 60 characters if possible.' },
+              { label: 'Meta description', name: 'description', widget: 'text', pattern: ['^.{50,170}$', 'Must be 50 to 170 characters'], hint: 'Shown in Google results. 50 to 170 characters.' },
+              { label: 'Publish date', name: 'date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD' },
+              { label: 'Category', name: 'vertical', widget: 'select', options: [
+                { label: 'Real Estate', value: 'real-estate' },
+                { label: 'D2C eCommerce', value: 'd2c-ecommerce' },
+                { label: 'B2B & SMEs', value: 'b2b-smes' },
+                { label: 'AI Automation', value: 'ai-automation' } ] },
+              { label: 'Tags', name: 'tags', widget: 'list', required: false, hint: 'Short topics, e.g. WhatsApp, Lead Follow-Up' },
+              { label: 'Cover image', name: 'cover', widget: 'image', required: false, hint: 'Landscape photo, about 1600 px wide. Leave empty to use generated artwork.' },
+              { label: 'Cover image alt text', name: 'coverAlt', widget: 'string', required: false, hint: 'Describe the photo for accessibility and SEO.' },
+              { label: 'Author', name: 'author', widget: 'string', default: 'DashCloud Team' },
+              { label: 'Featured (big hero post)', name: 'featured', widget: 'boolean', default: false, hint: 'Only one post should be featured at a time.' },
+              { label: 'Draft (hide from site)', name: 'draft', widget: 'boolean', default: false },
+              { label: 'Body', name: 'body', widget: 'markdown', hint: 'Use Heading 2 for sections. They become the contents list.' },
+            ],
+          },
+        ],
+      },
+    });
+  </script>
+</body>
+</html>

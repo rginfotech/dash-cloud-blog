@@ -1,0 +1,12 @@
+---
+import Hub from '../../components/Hub.astro';
+import { VERTICALS } from '../../content.config';
+import { getPosts } from '../../lib';
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return Object.entries(VERTICALS).map(([k, v]) => ({ params: { vertical: k }, props: { name: v, posts: posts.filter((p) => p.data.vertical === k) } }));
+}
+const { name, posts } = Astro.props;
+const { vertical } = Astro.params;
+---
+<Hub title={`${name} articles`} description={`DashCloud guides on AI lead response and automation for ${name}.`} heading={name} lede={`Guides and playbooks for ${name} teams.`} posts={posts} active={vertical} />

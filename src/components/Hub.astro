@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import PostCard from './PostCard.astro';
+import { VERTICALS } from '../content.config';
+import { fmtDate, MAIN, type Post } from '../lib';
+interface Props { title: string; heading: string; lede: string; posts: Post[]; active?: string; description: string; featured?: Post; trending?: Post[]; }
+const { title, heading, lede, posts, active, description, featured, trending = [] } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const jsonLd = [{ '@context': 'https://schema.org', '@type': 'Blog', name: 'DashCloud Blog', url: 'https://dashcloud.in/blog/' }];
+---
+<Base title={title} description={description} jsonLd={jsonLd}>
+  {featured ? (
+    <section class="hero hero-photo" style={featured.data.cover ? `--hero-img:url('${base}${featured.data.cover}')` : undefined}>
+      <div class="wrap">
+        <div class="eyebrow">Featured article</div>
+        <h1><a href={`${base}${featured.id}/`}>{featured.data.title}</a></h1>
+        <p class="lede">{featured.data.description}</p>
+        <div class="meta"><span class="kind">{VERTICALS[featured.data.vertical]}</span><span class="rule"></span><span>{fmtDate(featured.data.date)}</span></div>
+        <a class="btn" href={`${base}${featured.id}/`}>View article</a>
+      </div>
+    </section>
+  ) : (
+    <section class="hero hero-plain"><div class="wrap">
+      <div class="crumbs"><a href={base}>Blog</a> / {heading}</div>
+      <h1>{heading}</h1><p class="lede">{lede}</p>
+    </div></section>
+  )}
+
+  <div class="wrap">
+    <div class="bar">
+      <h2>{featured ? 'Latest articles' : 'Articles'}</h2>
+      <div class="chips">
+        <a class:list={['chip', { on: !active }]} href={base}>All</a>
+        {Object.entries(VERTICALS).map(([k, v]) => <a class:list={['chip', { on: active === k }]} href={`${base}category/${k}/`}>{v}</a>)}
+      </div>
+    </div>
+    <div class="grid">{posts.map((p) => <PostCard post={p} />)}</div>
+
+    {trending.length > 0 && (
+      <section class="trending"><h2>Trending now</h2>
+        <ol>{trending.map((p, i) => <li><span class="num">{String(i + 1).padStart(2, '0')}</span><a href={`${base}${p.id}/`}>{p.data.title}</a><span class="kind">{VERTICALS[p.data.vertical]}</span></li>)}</ol>
+      </section>
+    )}
+  </div>
+
+  <section class="band"><div class="wrap">
+    <div><h2>Stay ahead of every lead</h2><p>See how an AI agent answers, qualifies and follows up on your enquiries, tested on your own data.</p></div>
+    <a class="btn" href={`${MAIN}/contact/`}>Book a demo</a>
+  </div></section>
+</Base>

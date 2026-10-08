@@ -1,0 +1,12 @@
+---
+import Hub from '../../components/Hub.astro';
+import { getPosts, slugify } from '../../lib';
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  const tags = new Map<string, string>();
+  posts.forEach((p) => p.data.tags.forEach((t) => tags.set(slugify(t), t)));
+  return [...tags].map(([slug, name]) => ({ params: { tag: slug }, props: { name, posts: posts.filter((p) => p.data.tags.some((t) => slugify(t) === slug)) } }));
+}
+const { name, posts } = Astro.props;
+---
+<Hub title={`${name} articles`} description={`DashCloud articles tagged ${name}.`} heading={`#${name}`} lede={`All articles tagged ${name}.`} posts={posts} />

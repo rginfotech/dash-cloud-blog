@@ -1,0 +1,9 @@
+---
+import Hub from '../components/Hub.astro';
+import { getPosts } from '../lib';
+const posts = await getPosts();
+const featured = posts.find((p) => p.data.featured);
+const rest = posts.filter((p) => p !== featured);
+const trending = rest.slice(0, 4);
+---
+<Hub title="DashCloud Blog: AI lead follow-up, automation and growth" description="Practical guides on AI agents, lead response and automation for real estate, D2C eCommerce and B2B teams." heading="Turn every lead into a conversation" lede="Practical guides on AI agents, instant lead response and automation for growing businesses." posts={rest} featured={featured} trending={trending} />
