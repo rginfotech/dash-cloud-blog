@@ -58,6 +58,7 @@ function publish(summary) {
     const msg = summary ? `content: ${summary}` : 'content: update via admin';
     if (pending()) { git('add', '-A', '--', ...WATCH); git('commit', '-q', '-m', msg); }
     log('published', dir);
+    pushToGithub();
     setStatus({ state: 'live', summary, commit: git('rev-parse', '--short', 'HEAD').trim() });
     return true;
   } catch (e) {
@@ -66,6 +67,34 @@ function publish(summary) {
     return false;
   }
 }
+
+// Push the new commit to GitHub. A push failure never blocks the live site.
+function pushToGithub() {
+  if (process.env.GIT_PUSH === '0') return;
+  try {
+    git('pull', '--rebase', '--autostash', '-q', 'origin', 'main');
+    git('push', '-q', 'origin', 'main');
+    log('pushed to GitHub');
+  } catch (e) {
+    log('PUSH FAILED', String(e.stderr || e.message).split('\n')[0]);
+    setStatus({ state: 'live', pushError: String(e.stderr || e.message).split('\n')[0] });
+  }
+}
+
+// Pick up changes made on GitHub (e.g. by developers) and rebuild.
+function syncFromGithub() {
+  if (process.env.GIT_PUSH === '0' || pending()) return;
+  try {
+    git('fetch', '-q', 'origin', 'main');
+    const behind = Number(git('rev-list', '--count', 'HEAD..origin/main').trim());
+    if (behind > 0) {
+      git('merge', '--ff-only', '-q', 'origin/main');
+      log('pulled', behind, 'commit(s) from GitHub');
+      publish('sync from GitHub');
+    }
+  } catch (e) { log('sync error', String(e.stderr || e.message).split('\n')[0]); }
+}
+setInterval(syncFromGithub, 60000);
 
 let lastSig = null, stable = 0, failedSig = null;
 if (!existsSync(CURRENT)) publish('initial build');
