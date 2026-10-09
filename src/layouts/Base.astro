@@ -7,6 +7,8 @@ const { title, description, type = 'website', image, jsonLd = [], published, key
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const og = new URL(image ?? `${import.meta.env.BASE_URL}og-default.png`, Astro.site).href;
 const base = import.meta.env.BASE_URL;
+// Header/footer are provided by the main website. Set PUBLIC_SHOW_CHROME=true to render the built-in ones (standalone preview).
+const showChrome = import.meta.env.PUBLIC_SHOW_CHROME === 'true';
 const fullTitle = title.includes('DashCloud') ? title : `${title} | DashCloud Blog`;
 ---
 <!doctype html>
@@ -34,6 +36,7 @@ const fullTitle = title.includes('DashCloud') ? title : `${title} | DashCloud Bl
   {jsonLd.map((d) => <script type="application/ld+json" set:html={JSON.stringify(d)} />)}
 </head>
 <body>
+  {showChrome ? (
   <header class="site">
     <div class="wrap">
       <a href={`${MAIN}/`}><img src={`${base}images/cloud_logo.svg`} alt="Dash Cloud" /></a>
@@ -48,7 +51,9 @@ const fullTitle = title.includes('DashCloud') ? title : `${title} | DashCloud Bl
       </nav>
     </div>
   </header>
+  ) : <div id="site-header"></div>}
   <main><slot /></main>
+  {showChrome ? (
   <footer class="site">
     <div class="wrap">
       <div class="cols">
@@ -66,5 +71,6 @@ const fullTitle = title.includes('DashCloud') ? title : `${title} | DashCloud Bl
       <div class="legal">© {new Date().getFullYear()} DashCloud. All rights reserved. A unit of <a href="https://www.rginfotech.com/" rel="noopener">RG Infotech Pvt. Ltd.</a></div>
     </div>
   </footer>
+  ) : <div id="site-footer"></div>}
 </body>
 </html>
