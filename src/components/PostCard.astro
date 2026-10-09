@@ -1,6 +1,6 @@
 ---
 import PostImage from './PostImage.astro';
-import { VERTICALS } from '../content.config';
+import { VERTICALS } from '../categories';
 import { fmtDate, type Post } from '../lib';
 const { post } = Astro.props as { post: Post };
 const href = `${import.meta.env.BASE_URL}${post.id}/`;

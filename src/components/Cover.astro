@@ -1,13 +1,14 @@
 ---
 // Generated on-brand cover art per vertical. No external images needed.
-interface Props { vertical: 'real-estate' | 'd2c-ecommerce' | 'b2b-smes' | 'ai-automation'; id?: string; }
+interface Props { vertical: string; id?: string; }
 const { vertical, id = vertical } = Astro.props;
-const theme = {
+const themes: Record<string, { a: string; b: string; icon: string; chat: string[] }> = {
   'real-estate': { a: '#1a5fe0', b: '#101b45', icon: 'M20 80V38l28-20 28 20v42H58V56H38v24zM44 40h8v8h-8z', chat: ['New enquiry', 'Viewing booked'] },
   'd2c-ecommerce': { a: '#5749bb', b: '#1a5fe0', icon: 'M24 36h48l-4 44H28zM36 36c0-14 24-14 24 0', chat: ['Order placed', 'Confirmed on WhatsApp'] },
   'b2b-smes': { a: '#0aa864', b: '#101b45', icon: 'M16 80V44l22 12V44l22 12V32h20v48zM30 70h8M48 70h8M66 70h8', chat: ['Quote request', 'Qualified lead'] },
   'ai-automation': { a: '#101b45', b: '#5749bb', icon: 'M32 32h32v32H32zM40 24v8M56 24v8M40 64v8M56 64v8M24 40h8M24 56h8M64 40h8M64 56h8M42 42h12v12H42z', chat: ['Call answered', 'Meeting booked'] },
-}[vertical];
+};
+const theme = themes[vertical] ?? { a: '#1a5fe0', b: '#101b45', icon: 'M28 24h40v48H28zM38 40h20M38 52h20M38 64h12', chat: ['New enquiry', 'Answered instantly'] };
 const g = `cg-${id}`;
 ---
 <svg class="cover" viewBox="0 0 640 360" role="img" aria-label="" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">

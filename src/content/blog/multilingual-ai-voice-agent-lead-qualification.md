@@ -5,6 +5,7 @@ cover: "images/posts/support-agents.jpg"
 coverAlt: "Support agents with headsets working at laptops"
 date: 2026-10-02
 vertical: ai-automation
+keywords: ["ai voice agent lead qualification", "multilingual ai voice agent", "automated lead qualification calls", "ai appointment booking", "24/7 ai phone agent"]
 tags: ["AI Voice Agent", "Lead Qualification", "Automation"]
 ---
 

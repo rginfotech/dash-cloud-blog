@@ -5,6 +5,7 @@ cover: "images/posts/online-store-owner.jpg"
 coverAlt: "Online store owner preparing packages at a desk"
 date: 2026-10-04
 vertical: d2c-ecommerce
+keywords: ["ai order taking agent", "whatsapp ai agent for ecommerce", "d2c customer support automation", "ai chatbot for online store", "automate order capture"]
 tags: ["AI Agent", "WhatsApp", "D2C"]
 ---
 

@@ -1,0 +1,8 @@
+{
+  "categories": [
+    { "slug": "real-estate", "name": "Real Estate", "description": "AI lead follow-up and automation for brokers, builders and agencies." },
+    { "slug": "d2c-ecommerce", "name": "D2C eCommerce", "description": "Order confirmation, support and growth playbooks for online brands." },
+    { "slug": "b2b-smes", "name": "B2B & SMEs", "description": "Faster enquiry response and lead qualification for B2B teams." },
+    { "slug": "ai-automation", "name": "AI Automation", "description": "AI agents, voice and workflow automation explained." }
+  ]
+}

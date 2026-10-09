@@ -5,6 +5,7 @@ cover: "images/posts/small-business-team.jpg"
 coverAlt: "Small business team handling orders on a laptop"
 date: 2026-10-03
 vertical: b2b-smes
+keywords: ["respond to b2b marketplace enquiries", "b2b lead response", "ai lead qualification b2b", "sme lead management", "automated enquiry reply"]
 tags: ["B2B Marketplaces", "Lead Response", "SMEs"]
 ---
 

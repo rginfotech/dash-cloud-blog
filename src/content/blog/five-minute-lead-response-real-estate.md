@@ -5,6 +5,7 @@ cover: "images/posts/real-estate-meeting.jpg"
 coverAlt: "Couple meeting a real estate agent in an office"
 date: 2026-10-06
 vertical: real-estate
+keywords: ["speed to lead real estate", "lead response time", "real estate lead response", "respond to leads faster", "real estate lead conversion"]
 tags: ["Speed to Lead", "Lead Response", "Real Estate"]
 ---
 

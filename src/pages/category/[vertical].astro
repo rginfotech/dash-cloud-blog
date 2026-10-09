@@ -1,6 +1,6 @@
 ---
 import Hub from '../../components/Hub.astro';
-import { VERTICALS } from '../../content.config';
+import { VERTICALS, categoryDescription } from '../../categories';
 import { getPosts } from '../../lib';
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -8,5 +8,6 @@ export async function getStaticPaths() {
 }
 const { name, posts } = Astro.props;
 const { vertical } = Astro.params;
+const intro = categoryDescription(vertical!) || `Guides and playbooks for ${name} teams.`;
 ---
-<Hub title={`${name} articles`} description={`DashCloud guides on AI lead response and automation for ${name}.`} heading={name} lede={`Guides and playbooks for ${name} teams.`} posts={posts} active={vertical} />
+<Hub title={`${name} articles`} description={`DashCloud guides on AI lead response and automation for ${name}.`} heading={name} lede={intro} posts={posts} active={vertical} />

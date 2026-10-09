@@ -1,12 +1,8 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
-export const VERTICALS = {
-  'real-estate': 'Real Estate',
-  'd2c-ecommerce': 'D2C eCommerce',
-  'b2b-smes': 'B2B & SMEs',
-  'ai-automation': 'AI Automation',
-} as const;
+import { VERTICALS } from './categories';
+export { VERTICALS };
 
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
@@ -15,7 +11,8 @@ const blog = defineCollection({
     description: z.string().max(170),
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
-    vertical: z.enum(['real-estate', 'd2c-ecommerce', 'b2b-smes', 'ai-automation']),
+    vertical: z.string().refine((v) => v in VERTICALS, { message: 'Unknown category. Add it under Categories in the admin.' }),
+    keywords: z.array(z.string()).default([]),
     tags: z.array(z.string()).default([]),
     author: z.string().default('DashCloud Team'),
     cover: z.string().optional(),

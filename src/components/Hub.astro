@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import PostCard from './PostCard.astro';
-import { VERTICALS } from '../content.config';
+import { VERTICALS } from '../categories';
 import { fmtDate, MAIN, type Post } from '../lib';
 interface Props { title: string; heading: string; lede: string; posts: Post[]; active?: string; description: string; featured?: Post; trending?: Post[]; }
 const { title, heading, lede, posts, active, description, featured, trending = [] } = Astro.props;

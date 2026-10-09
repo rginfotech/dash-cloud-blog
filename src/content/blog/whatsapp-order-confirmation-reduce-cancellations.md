@@ -5,6 +5,7 @@ cover: "images/posts/order-packing.jpg"
 coverAlt: "Online shop owner packing orders next to a laptop"
 date: 2026-10-05
 vertical: d2c-ecommerce
+keywords: ["whatsapp order confirmation", "reduce order cancellations", "reduce returns ecommerce", "d2c order confirmation", "ai order confirmation"]
 tags: ["WhatsApp", "Order Confirmation", "D2C"]
 ---
 

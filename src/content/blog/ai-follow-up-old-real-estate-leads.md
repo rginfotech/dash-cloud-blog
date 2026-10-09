@@ -5,6 +5,7 @@ cover: "images/posts/real-estate-viewing.jpg"
 coverAlt: "Real estate agent showing a property to two buyers"
 date: 2026-10-07
 vertical: real-estate
+keywords: ["ai lead follow-up real estate", "revive old real estate leads", "real estate lead nurturing", "ai voice agent real estate", "book site visits"]
 tags: ["Lead Follow-Up", "AI Voice Agent", "Real Estate"]
 featured: true
 ---

@@ -9,7 +9,7 @@ const REPO = join(ROOT, 'repo');
 const BUILDS = join(ROOT, 'builds');
 const CURRENT = join(ROOT, 'current');
 const STATUS = join(ROOT, 'logs', 'status.json');
-const WATCH = ['src/content/blog', 'public/images/posts'];
+const WATCH = ['src/content/blog', 'src/data', 'public/images/posts'];
 const TICK_MS = 5000;
 
 mkdirSync(BUILDS, { recursive: true });

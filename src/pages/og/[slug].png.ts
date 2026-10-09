@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { VERTICALS } from '../../content.config';
+import { VERTICALS } from '../../categories';
 import { getPosts } from '../../lib';
 import { ogImage } from '../../og';
 
