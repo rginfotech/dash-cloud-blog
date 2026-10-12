@@ -25,6 +25,27 @@
 
 const SHELL_PATH = "/blog-shell/";
 
+/**
+ * Tailwind registers its --tw-* variables with @property, and browsers ignore @property inside a shadow
+ * root. Without them `translate`, shadows, rings etc. silently break. So the @property rules are copied
+ * out of the site's stylesheets and added to the page itself. `fetchCss(href)` returns a stylesheet's text.
+ */
+export async function withPropertyRules(shellHtml, fetchCss) {
+  const hrefs = [...shellHtml.matchAll(/<link[^>]*\brel="stylesheet"[^>]*>/g)]
+    .map((m) => m[0].match(/\bhref="([^"]+)"/)?.[1])
+    .filter(Boolean);
+  const rules = [];
+  for (const href of hrefs) {
+    try {
+      const css = await fetchCss(href);
+      rules.push(...(css.match(/@property\s+--[\w-]+\s*\{[^}]*\}/g) ?? []));
+    } catch {
+      /* a missing stylesheet only loses its @property rules */
+    }
+  }
+  return rules.length ? `${shellHtml}<style id="dc-props">${[...new Set(rules)].join("")}</style>` : shellHtml;
+}
+
 /** Pure string merge, easy to test. `shellHtml` is the HTML of /blog-shell/, `astroHtml` the blog page. */
 export function mergeShell(astroHtml, shellHtml) {
   const grab = (id) => shellHtml.match(new RegExp(`<template id="${id}">([\\s\\S]*?)</template>`))?.[1];
@@ -39,8 +60,8 @@ export function mergeShell(astroHtml, shellHtml) {
     .join("");
 
   const shadow = (html) => `<template shadowrootmode="open">${css}${html}</template>`;
-  const hostCss =
-    "<style>#site-header{display:block;position:sticky;top:0;z-index:50}#site-footer{display:block}</style>";
+  const props = shellHtml.match(/<style id="dc-props">([\s\S]*?)<\/style>/)?.[1] ?? "";
+  const hostCss = `<style>#site-header{display:block;position:sticky;top:0;z-index:50}#site-footer{display:block}${props}</style>`;
 
   let out = astroHtml
     .replace('<div id="site-header"></div>', () => `<div id="site-header">${shadow(header)}</div>`)
@@ -57,20 +78,20 @@ export async function withSiteShell(response, request, ctx, env) {
   try {
     const shellUrl = new URL(SHELL_PATH, request.url);
     const cache = caches.default;
-    let shell = await cache.match(shellUrl);
-    if (!shell) {
-      shell = env?.SITE
-        ? await env.SITE.fetch(new Request(shellUrl))
-        : await fetch(shellUrl, { cf: { cacheTtl: 300, cacheEverything: true } });
-      if (shell.ok) {
-        const copy = new Response(shell.clone().body, shell);
-        copy.headers.set("cache-control", "public, max-age=300");
-        ctx?.waitUntil(cache.put(shellUrl, copy));
-      }
+    const get = (url) => (env?.SITE ? env.SITE.fetch(new Request(url)) : fetch(url, { cf: { cacheTtl: 300, cacheEverything: true } }));
+    let shellHtml;
+    const cached = await cache.match(shellUrl);
+    if (cached) {
+      shellHtml = await cached.text();
+    } else {
+      const shell = await get(shellUrl);
+      if (!shell.ok) return response;
+      shellHtml = await withPropertyRules(await shell.text(), async (href) => (await get(new URL(href, shellUrl))).text());
+      const copy = new Response(shellHtml, { headers: { "content-type": "text/html", "cache-control": "public, max-age=300" } });
+      ctx?.waitUntil(cache.put(shellUrl, copy));
     }
-    if (!shell.ok) return response;
 
-    const html = mergeShell(await response.text(), await shell.text());
+    const html = mergeShell(await response.text(), shellHtml);
     const headers = new Headers(response.headers);
     headers.delete("content-length");
     return new Response(html, { status: response.status, statusText: response.statusText, headers });
