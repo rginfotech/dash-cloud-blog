@@ -16,6 +16,13 @@ const fullTitle = title.includes('DashCloud') ? title : `${title} | DashCloud Bl
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  {import.meta.env.PROD && (
+    <>
+      <!-- Google tag (gtag.js): same property as the main site -->
+      <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-CQ4F1ZSN0S"></script>
+      <script is:inline set:html="window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-CQ4F1ZSN0S');"></script>
+    </>
+  )}
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
   {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
