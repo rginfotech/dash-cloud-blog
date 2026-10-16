@@ -1,6 +1,8 @@
 ---
 title: "7 Questions an AI Agent Should Ask Every Real Estate Lead"
 description: "A short qualification script that separates serious buyers from browsers, so your agents only spend time on leads who are ready to view a property."
+cover: "images/posts/agent-phone-call.jpg"
+coverAlt: "Real estate agent on a phone call holding a clipboard"
 date: 2026-10-15
 vertical: real-estate
 keywords: ["real estate lead qualification", "ai lead qualification questions", "qualify real estate leads", "real estate ai agent", "buyer qualification script"]

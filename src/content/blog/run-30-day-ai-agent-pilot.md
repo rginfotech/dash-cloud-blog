@@ -1,6 +1,8 @@
 ---
 title: "How to Run a 30-Day AI Agent Pilot That Proves ROI"
 description: "A step-by-step pilot plan: define one measurable goal, set a baseline, run for four weeks and decide with data whether to roll out."
+cover: "images/posts/team-planning-notes.jpg"
+coverAlt: "Team planning a project with sticky notes on a wall"
 date: 2026-10-11
 vertical: ai-automation
 keywords: ["ai agent pilot", "ai pilot plan", "prove ai roi", "30 day ai pilot", "ai automation pilot project"]

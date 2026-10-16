@@ -1,6 +1,8 @@
 ---
 title: "AI Voice Agent vs Chatbot: Which Should You Deploy First?"
 description: "Voice agents and chatbots solve different problems. Learn how to choose the first one for your business based on your leads and customers."
+cover: "images/posts/phone-and-laptop.jpg"
+coverAlt: "Professional taking a phone call next to a laptop"
 date: 2026-10-12
 vertical: ai-automation
 keywords: ["ai voice agent vs chatbot", "voice agent or chatbot", "ai agent for business", "choose ai customer assistant", "conversational ai for sales"]

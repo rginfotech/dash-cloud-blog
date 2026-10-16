@@ -1,6 +1,8 @@
 ---
 title: "WhatsApp Abandoned Cart Recovery: A Practical Playbook for D2C Brands"
 description: "How to win back shoppers who left items in their cart, with message timing, wording and the rules that keep you compliant and welcome."
+cover: "images/posts/online-shopper-laptop.jpg"
+coverAlt: "Online shopper with a laptop and shopping bags"
 date: 2026-10-14
 vertical: d2c-ecommerce
 keywords: ["whatsapp abandoned cart recovery", "abandoned cart messages", "d2c cart recovery", "ecommerce whatsapp automation", "recover abandoned carts"]

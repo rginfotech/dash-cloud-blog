@@ -1,6 +1,8 @@
 ---
 title: "The Follow-Up Sequence That Works: Day 3, Day 7 and Day 14"
 description: "Most deals need several touches. Here is a simple follow-up sequence, with example wording, that keeps prospects engaged without being pushy."
+cover: "images/posts/laptop-typing-office.jpg"
+coverAlt: "Hands typing a message on a laptop at a desk"
 date: 2026-10-09
 vertical: b2b-smes
 keywords: ["sales follow-up sequence", "follow up with leads", "b2b follow-up cadence", "lead follow-up messages", "automated follow-up"]
