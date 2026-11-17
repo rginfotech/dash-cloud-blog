@@ -21,4 +21,4 @@ Set `PUBLIC_MAIN_SITE` at build time to the main site origin (default `https://d
 ## Editor notes
 
 - **URL slug:** every post has a `URL slug` field. It sets the page address (`/blog/<slug>/`) and the file name. Choose it before the first publish; changing it later changes the URL.
-- **Pasting from Word / Google Docs:** headings, lists, bold, italic and links are kept when pasting into the rich-text body (see `public/admin/word-paste.js`). Tables are pasted as plain rows separated by `|`.
+- **Pasting from Word / Google Docs:** headings, lists, bold, italic and links are kept when pasting into the rich-text body (see `public/admin/word-paste.js`). Tables are kept as real tables (the first row becomes the header). Nested bullets are flattened into one list.

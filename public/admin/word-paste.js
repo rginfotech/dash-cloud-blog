@@ -147,10 +147,16 @@
         else if (tag === 'BLOCKQUOTE') { var q = paragraph(el, 'paragraph'); if (q) nodes.push({ type: 'quote', children: [q] }); }
         else if (tag === 'PRE') { var pr = el.textContent; if (pr.trim()) nodes.push({ type: 'paragraph', children: [{ text: pr, code: true }] }); }
         else if (tag === 'TABLE') {
+          var rows = [];
           Array.prototype.forEach.call(el.querySelectorAll('tr'), function (tr) {
-            var cells = Array.prototype.map.call(tr.children, function (c) { return cleanText(c.textContent).trim(); }).filter(Boolean);
-            if (cells.length) nodes.push({ type: 'paragraph', children: [{ text: cells.join(' | ') }] });
+            var cells = Array.prototype.map.call(tr.children, function (c) {
+              return { type: 'table-cell', children: tidy(inline(c, {}, [])) };
+            });
+            if (cells.length) rows.push({ type: 'table-row', children: cells });
           });
+          var width = rows.reduce(function (m, r) { return Math.max(m, r.children.length); }, 0);
+          rows.forEach(function (r) { while (r.children.length < width) r.children.push({ type: 'table-cell', children: [{ text: '' }] }); });
+          if (rows.length) nodes.push({ type: 'table', children: rows });
         }
         else if (BLOCK_TAGS.test(tag) || el.querySelector('p,h1,h2,h3,h4,h5,h6,ul,ol,table,blockquote')) walk(el);
         else { var s = paragraph(el, 'paragraph'); if (s) nodes.push(s); }
