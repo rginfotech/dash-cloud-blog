@@ -8,4 +8,4 @@ export async function getStaticPaths() {
   return posts.map((p) => ({ params: { slug: p.id }, props: { title: p.data.title, vertical: p.data.vertical } }));
 }
 export const GET: APIRoute = async ({ props }) =>
-  new Response(await ogImage(props.title, VERTICALS[props.vertical as keyof typeof VERTICALS], props.vertical), { headers: { 'Content-Type': 'image/png' } });
+  new Response(await ogImage(props.title, VERTICALS[props.vertical as keyof typeof VERTICALS] ?? "Blog", props.vertical), { headers: { 'Content-Type': 'image/png' } });
