@@ -126,4 +126,4 @@ No. Dash eCom takes no commission and no per order fee. Online payments through 
 
 Building your own ecommerce app in India doesn't have to cost lakhs. If you need something truly custom, budget for a long build and ongoing developer costs. If you want to start selling under your own brand this month, a white label platform gets you a website and apps for a fraction of that.
 
-Want to see what your store would look like? [Book a free demo of Dash eCom](https://dashcloud.in/dash-ecom/contact) and we'll walk you through it with your own products. Or compare plans on the [pricing page](https://dashcloud.in/dash-ecom/pricing).
+Visit our [pricing page](https://dashcloud.in/dash-ecom/pricing) and compare which plan better fulfil your needs
