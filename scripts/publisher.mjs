@@ -49,6 +49,8 @@ function swap(dir) {
   for (const o of old) rmSync(join(BUILDS, o), { recursive: true, force: true });
 }
 
+let builtHead = null, failedHead = null; // commit the live build was made from
+
 function publish(summary) {
   log('building…', summary);
   setStatus({ state: 'building', summary });
@@ -57,6 +59,7 @@ function publish(summary) {
     swap(dir);
     const msg = summary ? `content: ${summary}` : 'content: update via admin';
     if (pending()) { git('add', '-A', '--', ...WATCH); git('commit', '-q', '-m', msg); }
+    builtHead = git('rev-parse', 'HEAD').trim();
     log('published', dir);
     pushToGithub();
     setStatus({ state: 'live', summary, commit: git('rev-parse', '--short', 'HEAD').trim() });
@@ -90,8 +93,10 @@ function syncFromGithub() {
     if (behind > 0) {
       git('merge', '--ff-only', '-q', 'origin/main');
       log('pulled', behind, 'commit(s) from GitHub');
-      publish('sync from GitHub');
     }
+    // Also rebuild when the push step pulled commits in after the last build.
+    const head = git('rev-parse', 'HEAD').trim();
+    if (head !== builtHead && head !== failedHead) { if (!publish('sync from GitHub')) failedHead = head; }
   } catch (e) { log('sync error', String(e.stderr || e.message).split('\n')[0]); }
 }
 setInterval(syncFromGithub, 60000);
