@@ -1,5 +1,4 @@
 ---
-slug: "ecommerce-app-development-cost-in-india-2026-guide"
 title: Ecommerce App Development Cost in India (2026 Guide)
 description: "What it really costs to build an ecommerce app and website in
   India: custom build vs freelancer vs white label, with real numbers and hidden
@@ -18,7 +17,8 @@ cover: images/posts/ecommerce-app-cost-india-featured.webp
 coverAlt: ecommerce app development cost India
 author: DashCloud Team
 featured: true
-draft: false
+draft: true
+slug: ecommerce-app-development-cost-in-india-2026-guide
 ---
 How much does it cost to build an ecommerce app in India?
 
