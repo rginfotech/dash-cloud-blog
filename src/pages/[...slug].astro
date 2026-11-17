@@ -41,7 +41,7 @@ const jsonLd = [
       <div class="prose"><Content /></div>
       <div class="meta" style="margin-top:28px">{d.tags.map((t) => <a class="tag" href={`${base}tag/${slugify(t)}/`}>{t}</a>)}</div>
     </article>
-    <Cta />
+    <Cta vertical={post.data.vertical} />
   </div>
   {related.length > 0 && (
     <div class="wrap related"><h2>Related reading</h2><div class="grid">{related.map((p) => <PostCard post={p} />)}</div></div>

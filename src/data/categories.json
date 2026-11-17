@@ -3,22 +3,34 @@
     {
       "slug": "d2c-ecommerce",
       "name": "D2C eCommerce",
-      "description": "Order confirmation, support and growth playbooks for online brands."
+      "description": "Order confirmation, support and growth playbooks for online brands.",
+      "ctaTitle": "Turn more orders into happy customers",
+      "ctaText": "See an AI agent confirm orders, answer product questions and recover lost carts on WhatsApp. Book a 20-minute demo.",
+      "ctaButton": "Book a demo"
     },
     {
       "slug": "ai-automation",
       "name": "AI Automation",
-      "description": "AI agents, voice and workflow automation explained."
+      "description": "AI agents, voice and workflow automation explained.",
+      "ctaTitle": "Ready to put an AI agent to work?",
+      "ctaText": "Tell us the task your team repeats every day. We will show you how an AI agent can handle it. Book a 20-minute demo.",
+      "ctaButton": "Book a demo"
     },
     {
       "slug": "b2b-smes",
       "name": "B2B & SMEs",
-      "description": "Faster enquiry response and lead qualification for B2B teams."
+      "description": "Faster enquiry response and lead qualification for B2B teams.",
+      "ctaTitle": "Reply to every business enquiry faster",
+      "ctaText": "See an AI agent sort enquiries, ask the right questions and prepare quotes for your sales team. Book a 20-minute demo.",
+      "ctaButton": "Book a demo"
     },
     {
       "slug": "real-estate",
       "name": "Real Estate",
-      "description": "AI lead follow-up and automation for brokers, builders and agencies."
+      "description": "AI lead follow-up and automation for brokers, builders and agencies.",
+      "ctaTitle": "Never miss another property enquiry",
+      "ctaText": "See how an AI agent replies to your buyer and tenant enquiries within a minute, qualifies them and books viewings. Book a 20-minute demo.",
+      "ctaButton": "Book a demo"
     }
   ]
 }
