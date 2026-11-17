@@ -1,4 +1,5 @@
 ---
+slug: "lead-scoring-b2b-without-crm"
 title: "How to Score and Prioritise B2B Leads Without a Big CRM"
 description: "A simple scoring model small B2B teams can run in a spreadsheet or a lightweight tool, so the best enquiries get answered first."
 cover: "images/posts/analytics-tablet.jpg"

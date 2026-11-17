@@ -1,4 +1,5 @@
 ---
+slug: "whatsapp-order-confirmation-reduce-cancellations"
 title: "Cut Cancellations and Returns With AI Order Confirmation on WhatsApp"
 description: "Unconfirmed orders, wrong addresses and buyer's remorse drain D2C margins. A confirmation flow on WhatsApp catches problems before you ship."
 cover: "images/posts/order-packing.jpg"

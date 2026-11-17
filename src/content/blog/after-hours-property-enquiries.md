@@ -1,4 +1,5 @@
 ---
+slug: "after-hours-property-enquiries"
 title: "Never Miss an After-Hours Property Enquiry Again"
 description: "Many property searches happen in the evening and at weekends. See how to respond outside office hours and give buyers a reason to wait for your agent."
 cover: "images/posts/modern-apartment-interior.jpg"

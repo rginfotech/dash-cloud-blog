@@ -1,4 +1,5 @@
 ---
+slug: "is-your-business-ready-for-an-ai-agent-checklist"
 title: "Is Your Business Ready for an AI Agent? A 10-Point Checklist"
 description: "Before you invest, check these ten things: clear goals, clean information, defined handoffs and measurable results. Use it to find your best first project."
 cover: "images/posts/checklist-planning.jpg"

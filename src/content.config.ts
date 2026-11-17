@@ -7,6 +7,7 @@ export { VERTICALS };
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
   schema: z.object({
+    slug: z.string().optional(),
     title: z.string(),
     description: z.string().max(170),
     date: z.coerce.date(),

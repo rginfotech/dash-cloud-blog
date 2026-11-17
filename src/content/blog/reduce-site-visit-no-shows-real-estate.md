@@ -1,4 +1,5 @@
 ---
+slug: "reduce-site-visit-no-shows-real-estate"
 title: "How to Reduce Site Visit No-Shows With Smart Reminders"
 description: "Missed viewings waste your team's day. A simple reminder and confirmation flow, handled by AI, helps more booked visits actually happen."
 cover: "images/posts/appointment-calendar.jpg"

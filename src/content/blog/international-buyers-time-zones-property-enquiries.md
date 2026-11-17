@@ -1,4 +1,5 @@
 ---
+slug: "international-buyers-time-zones-property-enquiries"
 title: "Serving International Property Buyers Across Time Zones"
 description: "Overseas buyers need fast answers and clear communication. Learn how to respond across time zones, share the right details and build trust remotely."
 cover: "images/posts/apartment-towers.jpg"

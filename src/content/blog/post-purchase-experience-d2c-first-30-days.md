@@ -1,4 +1,5 @@
 ---
+slug: "post-purchase-experience-d2c-first-30-days"
 title: "The Post-Purchase Experience: What to Send in a Customer's First 30 Days"
 description: "The sale is the start of the relationship. Plan a simple post-purchase message flow that reduces questions, builds trust and encourages a second order."
 cover: "images/posts/unboxing-gift-box.jpg"

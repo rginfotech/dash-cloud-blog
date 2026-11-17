@@ -1,4 +1,5 @@
 ---
+slug: "run-30-day-ai-agent-pilot"
 title: "How to Run a 30-Day AI Agent Pilot That Proves ROI"
 description: "A step-by-step pilot plan: define one measurable goal, set a baseline, run for four weeks and decide with data whether to roll out."
 cover: "images/posts/team-planning-notes.jpg"

@@ -1,4 +1,5 @@
 ---
+slug: "ai-order-taking-agent-small-online-brands"
 title: "An AI Order-Taking Agent for Small Online Brands: What It Can and Cannot Do"
 description: "Social DMs, WhatsApp chats and email enquiries pile up. Learn how an AI agent takes orders, answers product questions and hands off to humans."
 cover: "images/posts/online-store-owner.jpg"

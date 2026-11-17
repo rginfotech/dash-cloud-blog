@@ -1,4 +1,5 @@
 ---
+slug: "multilingual-ai-voice-agent-lead-qualification"
 title: "Using an AI Voice Agent to Qualify Leads 24/7, in Multiple Languages"
 description: "Voice agents can call new enquiries within minutes, ask your qualifying questions and book meetings. See where they fit and where humans still win."
 cover: "images/posts/support-agents.jpg"

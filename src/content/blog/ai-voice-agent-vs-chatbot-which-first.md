@@ -1,4 +1,5 @@
 ---
+slug: "ai-voice-agent-vs-chatbot-which-first"
 title: "AI Voice Agent vs Chatbot: Which Should You Deploy First?"
 description: "Voice agents and chatbots solve different problems. Learn how to choose the first one for your business based on your leads and customers."
 cover: "images/posts/phone-and-laptop.jpg"

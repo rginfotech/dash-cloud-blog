@@ -9,11 +9,12 @@
 <body>
   <script>window.CMS_MANUAL_INIT = true;</script>
   <script src="https://unpkg.com/decap-cms@3.3.3/dist/decap-cms.js"></script>
+  <script src="word-paste.js"></script>
   <script>
     CMS.init({
       config: {
         load_config_file: false,
-        backend: { name: 'proxy', proxy_url: location.origin + '/blog/api/v1', branch: 'main' },
+        backend: { name: 'proxy', proxy_url: new URLSearchParams(location.search).get('proxy') || location.origin + '/blog/api/v1', branch: 'main' },
         publish_mode: 'simple',
         media_folder: 'public/images/posts',
         public_folder: 'images/posts',
@@ -27,11 +28,12 @@
             extension: 'md',
             format: 'frontmatter',
             create: true,
-            slug: '{{slug}}',
+            slug: '{{fields.slug}}',
             summary: '{{title}} ({{vertical}})',
             sortable_fields: ['date', 'title'],
             fields: [
               { label: 'Title', name: 'title', widget: 'string', hint: 'Appears as the page H1 and in Google results. Keep under 60 characters if possible.' },
+              { label: 'URL slug', name: 'slug', widget: 'string', pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', 'Lowercase letters, numbers and hyphens only, e.g. ai-follow-up-leads'], hint: 'The page address: dashcloud.in/blog/your-slug/. Lowercase letters, numbers and hyphens. Choose it before publishing. Changing it later breaks old links.' },
               { label: 'Meta description', name: 'description', widget: 'text', pattern: ['^.{50,170}$', 'Must be 50 to 170 characters'], hint: 'Shown in Google results. 50 to 170 characters.' },
               { label: 'Publish date', name: 'date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD' },
               { label: 'Category', name: 'vertical', widget: 'relation', collection: 'settings', file: 'categories',
@@ -44,7 +46,7 @@
               { label: 'Author', name: 'author', widget: 'string', default: 'DashCloud Team' },
               { label: 'Featured (big hero post)', name: 'featured', widget: 'boolean', default: false, hint: 'Only one post should be featured at a time.' },
               { label: 'Draft (hide from site)', name: 'draft', widget: 'boolean', default: false },
-              { label: 'Body', name: 'body', widget: 'markdown', hint: 'Use Heading 2 for sections. They become the contents list.' },
+              { label: 'Body', name: 'body', widget: 'markdown', hint: 'Use Heading 2 for sections. They become the contents list. Pasting from Word or Google Docs keeps headings, lists, bold, italic and links.' },
             ],
           },
           {

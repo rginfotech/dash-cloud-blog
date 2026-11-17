@@ -1,4 +1,5 @@
 ---
+slug: "messaging-channels-which-to-automate-first"
 title: "Which Messaging Channel Should You Automate First?"
 description: "Website chat, WhatsApp, email or phone? Learn how to choose the first channel for your AI agent based on where your customers already are."
 cover: "images/posts/phone-chat-coffee.jpg"

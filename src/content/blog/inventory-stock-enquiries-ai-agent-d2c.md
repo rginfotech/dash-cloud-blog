@@ -1,4 +1,5 @@
 ---
+slug: "inventory-stock-enquiries-ai-agent-d2c"
 title: "Answer Stock and Availability Questions Instantly With AI"
 description: "Shoppers ask 'is it in stock?' before they buy. See how an AI agent can answer availability questions, suggest alternatives and capture back-in-stock interest."
 cover: "images/posts/warehouse-aisle.jpg"

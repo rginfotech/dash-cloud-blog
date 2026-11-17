@@ -1,4 +1,5 @@
 ---
+slug: "follow-up-sequence-day-3-7-14"
 title: "The Follow-Up Sequence That Works: Day 3, Day 7 and Day 14"
 description: "Most deals need several touches. Here is a simple follow-up sequence, with example wording, that keeps prospects engaged without being pushy."
 cover: "images/posts/laptop-typing-office.jpg"

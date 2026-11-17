@@ -1,4 +1,5 @@
 ---
+slug: "questions-ai-agent-should-ask-real-estate-leads"
 title: "7 Questions an AI Agent Should Ask Every Real Estate Lead"
 description: "A short qualification script that separates serious buyers from browsers, so your agents only spend time on leads who are ready to view a property."
 cover: "images/posts/agent-phone-call.jpg"

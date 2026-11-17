@@ -1,4 +1,5 @@
 ---
+slug: "virtual-property-tours-lead-follow-up"
 title: "After the Virtual Tour: Follow Up While Interest Is High"
 description: "Virtual tours attract viewers, but interest fades fast. See how to follow up with the right message, answer questions and book in-person visits."
 cover: "images/posts/virtual-tour-headset.jpg"

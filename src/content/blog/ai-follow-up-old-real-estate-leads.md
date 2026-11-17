@@ -1,4 +1,5 @@
 ---
+slug: "ai-follow-up-old-real-estate-leads"
 title: "How AI Follow-Up Turns Old Real Estate Leads Into Site Visits"
 description: "Most agencies sit on a pile of cold enquiries. Here is how an AI agent re-engages them by call and message and books viewings for your team."
 cover: "images/posts/real-estate-viewing.jpg"

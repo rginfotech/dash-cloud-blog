@@ -1,4 +1,5 @@
 ---
+slug: "contract-renewal-reminders-b2b-accounts"
 title: "Never Lose a Renewal: A Simple System for B2B Account Follow-Up"
 description: "Renewals are the easiest revenue to keep and the easiest to forget. Build a timeline of touchpoints that keeps accounts happy and renewals on schedule."
 cover: "images/posts/contract-meeting.jpg"

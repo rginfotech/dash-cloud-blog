@@ -1,4 +1,5 @@
 ---
+slug: "automate-quote-requests-b2b"
 title: "Automate Quote Requests: Send Accurate B2B Quotes Faster"
 description: "Slow quotes lose deals. Learn how to collect the right details up front, draft quotes quickly and keep a person in control of pricing."
 cover: "images/posts/business-handshake.jpg"

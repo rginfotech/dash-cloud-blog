@@ -1,4 +1,5 @@
 ---
+slug: "whatsapp-business-messaging-compliance-basics"
 title: "WhatsApp Business Messaging: Compliance Basics for Marketers"
 description: "A plain-language overview of consent, opt-outs and message types to keep your WhatsApp outreach welcome and within platform rules. Not legal advice."
 cover: "images/posts/texting-messaging-app.jpg"

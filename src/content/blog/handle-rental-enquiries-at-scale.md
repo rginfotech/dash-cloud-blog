@@ -1,4 +1,5 @@
 ---
+slug: "handle-rental-enquiries-at-scale"
 title: "Handle Rental Enquiries at Scale Without Missing the Good Tenants"
 description: "Rental listings can bring dozens of enquiries a day. Learn how to answer common questions, pre-screen interest and schedule viewings automatically."
 cover: "images/posts/rental-keys-hand.jpg"

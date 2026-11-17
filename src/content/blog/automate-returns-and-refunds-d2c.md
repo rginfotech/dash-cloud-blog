@@ -1,4 +1,5 @@
 ---
+slug: "automate-returns-and-refunds-d2c"
 title: "Automate Returns and Refund Requests Without Losing the Customer"
 description: "Returns are a moment of truth for online brands. Learn how an AI agent can handle return requests quickly, follow your policy and escalate the tricky cases."
 cover: "images/posts/returns-parcel.jpg"

@@ -1,4 +1,5 @@
 ---
+slug: "customer-reviews-follow-up-automation-d2c"
 title: "Collect More Customer Reviews With Polite Automated Follow-Ups"
 description: "Reviews build trust for online brands, but few customers write them unprompted. Learn when and how to ask, and how to handle unhappy feedback."
 cover: "images/posts/five-star-review.jpg"

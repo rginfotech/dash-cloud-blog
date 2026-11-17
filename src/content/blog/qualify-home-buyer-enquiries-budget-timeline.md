@@ -1,4 +1,5 @@
 ---
+slug: "qualify-home-buyer-enquiries-budget-timeline"
 title: "Qualify Home Buyer Enquiries by Budget and Timeline Automatically"
 description: "Not every enquiry is ready to buy. Learn how to sort serious buyers from browsers with a few short questions, so agents focus on the right people."
 cover: "images/posts/home-for-sale-keys.jpg"

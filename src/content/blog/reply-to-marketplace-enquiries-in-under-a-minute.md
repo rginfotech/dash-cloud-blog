@@ -1,4 +1,5 @@
 ---
+slug: "reply-to-marketplace-enquiries-in-under-a-minute"
 title: "Reply to Marketplace Enquiries in Under a Minute With AI"
 description: "B2B marketplace buyers message many suppliers at once. Learn how automated, accurate first replies help small suppliers win more conversations."
 cover: "images/posts/small-business-team.jpg"

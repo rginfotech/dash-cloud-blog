@@ -1,4 +1,5 @@
 ---
+slug: "b2b-sales-pipeline-hygiene-small-teams"
 title: "Keep Your Sales Pipeline Clean: A Weekly Routine for Small Teams"
 description: "A messy pipeline hides real opportunities. Use this short weekly routine and light automation to keep deals visible, current and honest."
 cover: "images/posts/pipeline-notes.jpg"

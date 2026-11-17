@@ -1,4 +1,5 @@
 ---
+slug: "reorder-reminders-consumables-d2c"
 title: "Reorder Reminders: Helping Customers Restock Before They Run Out"
 description: "If you sell products that get used up, a well-timed reminder can bring customers back. Learn how to time it, word it and make reordering effortless."
 cover: "images/posts/subscription-box-products.jpg"

@@ -1,4 +1,5 @@
 ---
+slug: "shared-inbox-triage-b2b-sales-support"
 title: "Tame the Shared Inbox: Sort and Route B2B Emails Automatically"
 description: "A busy shared inbox hides sales opportunities and urgent requests. Learn how to sort, tag and route messages so the right person sees them quickly."
 cover: "images/posts/inbox-laptop.jpg"

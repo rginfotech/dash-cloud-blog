@@ -1,4 +1,5 @@
 ---
+slug: "run-discovery-calls-with-ai-prep-b2b"
 title: "Prepare for Discovery Calls Faster With AI Lead Summaries"
 description: "Good discovery calls start with good preparation. See how an AI agent can gather context before the call and give your sales team a clear summary."
 cover: "images/posts/video-call-laptop.jpg"

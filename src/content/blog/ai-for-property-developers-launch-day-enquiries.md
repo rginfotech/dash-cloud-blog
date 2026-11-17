@@ -1,4 +1,5 @@
 ---
+slug: "ai-for-property-developers-launch-day-enquiries"
 title: "AI for Property Developers: Handling Launch-Day Enquiry Spikes"
 description: "A new project launch can bring hundreds of enquiries in days. Learn how AI agents reply instantly, qualify buyers and book site visits at scale."
 cover: "images/posts/architect-plans.jpg"

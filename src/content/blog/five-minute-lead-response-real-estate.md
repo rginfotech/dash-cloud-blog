@@ -1,4 +1,5 @@
 ---
+slug: "five-minute-lead-response-real-estate"
 title: "Why a 5-Minute Lead Response Beats More Ad Spend in Real Estate"
 description: "Buyers enquire with several agents at once. The first useful reply usually wins the conversation. Here is how to respond in minutes, around the clock."
 cover: "images/posts/real-estate-meeting.jpg"
