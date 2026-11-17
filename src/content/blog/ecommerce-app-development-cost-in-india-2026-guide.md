@@ -1,5 +1,5 @@
 ---
-title: "Ecommerce App Development Cost in India "
+title: Ecommerce App Development Cost in India
 slug: ecommerce-app-development-cost-india
 description: "What it really costs to build an ecommerce app and website in
   India: custom build vs freelancer vs white label, with real numbers and hidden
@@ -14,7 +14,7 @@ keywords:
   - white label ecommerce solution
 tags:
   - ecommerce
-  - appdevelopmentcost
+  - app development cost
 cover: images/posts/ecommerce-app-cost-india-featured.webp
 coverAlt: ecommerce app development cost India
 author: DashCloud Team
@@ -59,13 +59,11 @@ A white label platform gives you a store that's already built and tested. It's s
 
 Here is what that looks like with [Dash eCom](https://dashcloud.in/dash-ecom/), our white label ecommerce solution for store owners, wholesalers and manufacturers:
 
-Plan | Monthly | Yearly | One-time setup
-
-Starter | ₹1,500 | ₹16,500 | ₹10,000
-
-Standard | ₹2,500 | ₹27,500 | ₹13,000
-
-Professional | ₹4,000 | ₹44,000 | ₹20,000
+| Plan         | Monthly | Yearly  | One-time setup |
+| ------------ | ------- | ------- | -------------- |
+| Starter      | ₹1,500  | ₹16,500 | ₹10,000        |
+| Standard     | ₹2,500  | ₹27,500 | ₹13,000        |
+| Professional | ₹4,000  | ₹44,000 | ₹20,000        |
 
 Every plan includes the customer website, Android app, admin dashboard and a payment gateway. Standard adds the iOS app, the Store Owner App, POS billing, COD, wholesale pricing and your own domain. Professional adds multi store and Shopify and WooCommerce integration. The full list is on the [pricing page](https://dashcloud.in/dash-ecom/pricing).
 
@@ -87,19 +85,14 @@ Whichever route you take, these show up sooner or later:
 
 **Side by side: which one is right for you?**
 
-Custom build | Freelancer or template | White label (Dash eCom)
-
-Upfront cost | ₹5 lakh to ₹13 lakh (approx.) | ₹30,000 to ₹1.5 lakh (approx.) | ₹10,000 to ₹20,000 setup
-
-Ongoing cost | Servers + developer retainer | Hosting + paid fixes | ₹1,500 to ₹4,000 a month, hosting included
-
-Time to launch | 4 to 8 months | 1 to 3 months | 5 to 10 working days
-
-Your brand only | Yes | Usually | Yes
-
-Updates and fixes | You pay each time | You pay each time | Included
-
-Custom features | Anything | Limited | Add-ons and custom work on higher plans
+|                   | Custom build                  | Freelancer or template         | White label (Dash eCom)                    |
+| ----------------- | ----------------------------- | ------------------------------ | ------------------------------------------ |
+| Upfront cost      | ₹5 lakh to ₹13 lakh (approx.) | ₹30,000 to ₹1.5 lakh (approx.) | ₹10,000 to ₹20,000 setup                   |
+| Ongoing cost      | Servers + developer retainer  | Hosting + paid fixes           | ₹1,500 to ₹4,000 a month, hosting included |
+| Time to launch    | 4 to 8 months                 | 1 to 3 months                  | 5 to 10 working days                       |
+| Your brand only   | Yes                           | Usually                        | Yes                                        |
+| Updates and fixes | You pay each time             | You pay each time              | Included                                   |
+| Custom features   | Anything                      | Limited                        | Add-ons and custom work on higher plans    |
 
 A simple way to decide:
 
