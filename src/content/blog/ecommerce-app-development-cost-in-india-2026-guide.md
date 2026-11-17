@@ -21,7 +21,7 @@ author: DashCloud Team
 featured: true
 draft: false
 ---
-**How much does it cost to build an ecommerce app in India?**
+## **How much does it cost to build an ecommerce app in India?**
 
 If you run a shop, a wholesale business or a small brand, you've probably asked this question to a developer at least once. The answer you got was likely "it depends". That's true, but it doesn't help you plan.
 
@@ -29,7 +29,7 @@ So here is a straight answer. In India, getting your own ecommerce website plus 
 
 Below we break down each option, the costs people usually forget, and how to pick the right one for your business.
 
-**Option 1: Build a custom app from scratch**
+### **Option 1: Build a custom app from scratch**
 
 This is what most agencies will quote for. A team designs your store, writes the website, the Android app, the iOS app and the admin panel, then hands it over.
 
@@ -43,7 +43,7 @@ That's before anything runs. Once it's live you pay for servers, bug fixes, app 
 
 **When it makes sense:** you have a truly unusual business model, an in-house tech team, and the budget to keep paying for it.
 
-**Option 2: Hire a freelancer or buy a template**
+### **Option 2: Hire a freelancer or buy a template**
 
 This is the route a lot of small shop owners try first. You find a freelancer, or buy a ready-made ecommerce script or app template, and get someone to set it up with your logo.
 
@@ -53,7 +53,7 @@ The catch shows up later. Templates are built for everyone, so features you need
 
 **When it makes sense:** a very tight budget, a simple catalogue, and someone technical you trust who will stick around.
 
-**Option 3: Use a white label ecommerce solution**
+### **Option 3: Use a white label ecommerce solution**
 
 A white label platform gives you a store that's already built and tested. It's set up with your name, logo, colours and domain, and your customers never see anyone else's brand. You pay a setup fee and a monthly plan instead of paying for development.
 
@@ -100,19 +100,29 @@ A simple way to decide:
 2. **Selling to retailers or dealers (B2B)?** Check that the platform supports wholesale price lists, quantity slabs and credit limits before you sign. Dash eCom includes these from the Standard plan.
 3. **Doing something no platform supports?** Then a custom build may be worth it. Even so, many businesses launch on a white label store first and build custom later, once they know what customers actually use.
 
-**Frequently asked questions**
+## **Frequently asked questions**
 
-**What is the cheapest way to get an ecommerce app in India?** A white label ecommerce solution is usually the cheapest way to get a branded website and app. With Dash eCom, the Starter plan is ₹1,500 a month plus a one-time ₹10,000 setup, and includes a website and Android app.
+###### **What is the cheapest way to get an ecommerce app in India?** 
 
-**Can I get both Android and iOS apps?** Yes. The Android app comes with every Dash eCom plan, and the iOS app is included from the Standard plan (₹2,500 a month).
+A white label ecommerce solution is usually the cheapest way to get a branded website and app. With Dash eCom, the Starter plan is ₹1,500 a month plus a one-time ₹10,000 setup, and includes a website and Android app.
 
-**How long does it take to launch?** A custom build often takes 4 to 8 months. A white label store can be live in 5 to 10 working days once you share your logo, colours, domain and product catalogue.
+###### **Can I get both Android and iOS apps?** 
 
-**Will customers see someone else's brand in my app?** Not with a white label platform. In Dash eCom your logo, colours, domain, app icons, emails and invoices carry only your brand.
+Yes. The Android app comes with every Dash eCom plan, and the iOS app is included from the Standard plan (₹2,500 a month).
 
-**Are there charges per order?** Dash eCom charges a small transaction fee on successful orders: 3% on Starter, 2.5% on Standard and 2% on Professional. Payment gateway charges apply separately to online payments.
+###### **How long does it take to launch?** 
 
-**The short answer**
+A custom build often takes 4 to 8 months. A white label store can be live in 5 to 10 working days once you share your logo, colours, domain and product catalogue.
+
+###### **Will customers see someone else's brand in my app?** 
+
+Not with a white label platform. In Dash eCom your logo, colours, domain, app icons, emails and invoices carry only your brand.
+
+###### **Are there charges per order?** 
+
+No. Dash eCom takes no commission and no per order fee. Online payments through the built-in payment gateway carry gateway charges of 3% on Starter, 2.5% on Standard and 2% on Professional, and cash on delivery orders have no charge. If you bring your own gateway, that gateway's own charges apply instead. 
+
+###### **The short answer**
 
 Building your own ecommerce app in India doesn't have to cost lakhs. If you need something truly custom, budget for a long build and ongoing developer costs. If you want to start selling under your own brand this month, a white label platform gets you a website and apps for a fraction of that.
 
