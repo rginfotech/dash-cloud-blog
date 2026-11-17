@@ -17,7 +17,7 @@ cover: images/posts/ecommerce-app-cost-india-featured.webp
 coverAlt: ecommerce app development cost India
 author: DashCloud Team
 featured: true
-draft: true
+draft: false
 ---
 How much does it cost to build an ecommerce app in India?
 
