@@ -1,6 +1,7 @@
 ---
 slug: "seller-leads-valuation-requests-follow-up"
 title: "Win More Listings: Respond to Seller and Valuation Requests Faster"
+seoTitle: "Win More Listings: Respond to Sellers Faster"
 description: "A seller usually talks to several agents before choosing one. Learn how fast, helpful responses help you win the listing."
 cover: "images/posts/for-sale-sign.jpg"
 coverAlt: "A red for sale sign with an arrow and house icon"

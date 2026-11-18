@@ -1,6 +1,7 @@
 ---
 slug: "automate-order-status-whatsapp-wismo"
 title: "Stop Answering 'Where Is My Order?': Automate Order Tracking Updates"
+seoTitle: "Automate Order Tracking: Stop 'Where Is My Order?'"
 description: "Order status questions fill your support inbox. Learn how proactive updates and an AI agent answer them automatically, and keep customers calmer."
 cover: "images/posts/parcels-on-porch.jpg"
 coverAlt: "Packages waiting on a doorstep"

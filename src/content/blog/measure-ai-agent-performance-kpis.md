@@ -1,6 +1,7 @@
 ---
 slug: "measure-ai-agent-performance-kpis"
 title: "Measuring an AI Agent: Five Numbers That Tell You If It Works"
+seoTitle: "Measuring an AI Agent: 5 Numbers That Show It Works"
 description: "How do you know if your AI agent is helping? Track these five practical metrics and review them every week."
 cover: "images/posts/dashboard-laptop.jpg"
 coverAlt: "A laptop displaying analytics charts on a couch"

@@ -1,6 +1,7 @@
 ---
 slug: "reduce-failed-payments-checkout-recovery-d2c"
 title: "Recover Failed Payments and Checkout Errors Before the Customer Leaves"
+seoTitle: "Recover Failed Payments and Checkout Errors"
 description: "A failed payment is a customer who wanted to buy. See how to detect failures, help customers finish and reduce lost orders."
 cover: "images/posts/card-checkout-laptop.jpg"
 coverAlt: "A person holding a bank card in front of a laptop to pay online"

@@ -1,6 +1,7 @@
 ---
 slug: "b2b-follow-up-after-trade-show-or-webinar"
 title: "Follow Up After Events: Turn Business Cards Into Conversations"
+seoTitle: "Event Follow-Up: Turn Business Cards Into Conversations"
 description: "Event leads go cold within days. Learn a simple follow-up flow that sorts contacts, personalises messages and hands warm leads to your sales team."
 cover: "images/posts/handshake-keys.jpg"
 coverAlt: "Two people shaking hands"

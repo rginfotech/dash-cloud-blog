@@ -33,6 +33,7 @@
             sortable_fields: ['date', 'title'],
             fields: [
               { label: 'Title', name: 'title', widget: 'string', hint: 'Appears as the page H1 and in Google results. Keep under 60 characters if possible.' },
+              { label: 'SEO title (Google title)', name: 'seoTitle', widget: 'string', required: false, pattern: ['^.{1,60}$', 'Keep it to 60 characters or fewer'], hint: 'Optional. The title shown in Google and browser tabs, 60 characters or fewer. Leave empty to use the Title above (the brand name is added only if it fits).' },
               { label: 'URL slug', name: 'slug', widget: 'string', pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', 'Lowercase letters, numbers and hyphens only, e.g. ai-follow-up-leads'], hint: 'The page address: dashcloud.in/blog/your-slug/. Lowercase letters, numbers and hyphens. Choose it before publishing. Changing it later breaks old links.' },
               { label: 'Meta description', name: 'description', widget: 'text', pattern: ['^.{50,170}$', 'Must be 50 to 170 characters'], hint: 'Shown in Google results. 50 to 170 characters.' },
               { label: 'Publish date', name: 'date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD' },

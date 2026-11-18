@@ -1,6 +1,7 @@
 ---
 slug: "ai-agent-data-privacy-basics"
 title: "AI Agents and Customer Data: Privacy Basics Every Business Should Know"
+seoTitle: "AI Agents and Customer Data: Privacy Basics"
 description: "Using an AI agent means handling customer information. Learn the basic privacy habits that protect your customers and your business."
 cover: "images/posts/secure-laptop.jpg"
 coverAlt: "A laptop showing a padlock and the word Secured"

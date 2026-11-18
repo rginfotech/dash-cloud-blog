@@ -1,6 +1,7 @@
 ---
 slug: "human-handover-ai-agent-best-practices"
 title: "When the AI Should Hand Over to a Human: Designing a Good Handover"
+seoTitle: "AI Agent Human Handover: When and How to Do It"
 description: "Every good AI agent knows its limits. Learn when to hand over to a person and how to do it so the customer never has to repeat themselves."
 cover: "images/posts/headset-agent.jpg"
 coverAlt: "A smiling customer service agent wearing a headset"

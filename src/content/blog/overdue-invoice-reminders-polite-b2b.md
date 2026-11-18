@@ -1,6 +1,7 @@
 ---
 slug: "overdue-invoice-reminders-polite-b2b"
 title: "Chasing Overdue Invoices Politely: A Reminder Sequence That Works"
+seoTitle: "Chasing Overdue Invoices Politely: Reminder Sequence"
 description: "Late payments hurt small businesses. Use a courteous reminder sequence that gets you paid without damaging the client relationship."
 cover: "images/posts/invoice-calculator.jpg"
 coverAlt: "A hand holding a calculator above an invoice"

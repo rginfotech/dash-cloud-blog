@@ -1,6 +1,7 @@
 ---
 slug: "what-is-an-ai-agent-plain-english"
 title: "What Is an AI Agent? A Plain-English Guide for Business Owners"
+seoTitle: "What Is an AI Agent? A Plain-English Guide"
 description: "AI agents are everywhere in the news, but what do they actually do? A clear, jargon-free explanation of what they are and where they help a business."
 cover: "images/posts/robotic-hand.jpg"
 coverAlt: "A robotic hand against a blue background"

@@ -27,7 +27,7 @@ const jsonLd = [
     { '@type': 'ListItem', position: 3, name: d.title, item: url } ] },
 ];
 ---
-<Base title={d.title} description={d.description} type="article" image={`${base}og/${post.id}.png`} published={d.date} keywords={d.keywords.length ? d.keywords : d.tags} jsonLd={jsonLd}>
+<Base title={d.title} seoTitle={d.seoTitle} description={d.description} type="article" image={`${base}og/${post.id}.png`} published={d.date} keywords={d.keywords.length ? d.keywords : d.tags} jsonLd={jsonLd}>
   <div class="narrow">
     <article class="post">
       <div class="crumbs"><a href={base}>Blog</a> / <a href={`${base}category/${d.vertical}/`}>{VERTICALS[d.vertical]}</a></div>

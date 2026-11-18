@@ -1,6 +1,7 @@
 ---
 slug: "map-your-process-before-you-automate"
 title: "Map Your Process Before You Automate: A Simple Workflow Exercise"
+seoTitle: "Map Your Process Before You Automate"
 description: "Automating a messy process only makes the mess faster. Use this one-hour exercise to map your workflow and find the best place for an AI agent."
 cover: "images/posts/whiteboard-workflow.jpg"
 coverAlt: "Two colleagues mapping a process on a whiteboard with sticky notes"
