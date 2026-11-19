@@ -5,7 +5,7 @@ import PostImage from '../components/PostImage.astro';
 import Cta from '../components/Cta.astro';
 import PostCard from '../components/PostCard.astro';
 import { VERTICALS } from '../categories';
-import { getPosts, fmtDate, readingTime, slugify } from '../lib';
+import { getPosts, fmtDate, readingTime } from '../lib';
 export async function getStaticPaths() {
   const posts = await getPosts();
   return posts.map((post) => ({
@@ -39,7 +39,7 @@ const jsonLd = [
           <ul>{toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ul></nav>
       )}
       <div class="prose"><Content /></div>
-      <div class="meta" style="margin-top:28px">{d.tags.map((t) => <a class="tag" href={`${base}tag/${slugify(t)}/`}>{t}</a>)}</div>
+      <div class="meta" style="margin-top:28px">{d.tags.map((t) => <span class="tag">{t}</span>)}</div>
     </article>
     <Cta vertical={post.data.vertical} />
   </div>
