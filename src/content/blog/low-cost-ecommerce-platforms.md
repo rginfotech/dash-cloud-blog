@@ -10,7 +10,7 @@ vertical: d2c-ecommerce
 keywords:
   - "Low-Cost eCommerce Platforms "
 author: DashCloud Team
-featured: false
+featured: true
 draft: false
 ---
 **Low-Cost eCommerce Platforms** can now be considered a viable choice for setting up an online store without spending lots of money on software development. Since the sphere of online retailing is only going to grow, making the right choice of platform becomes vital.
